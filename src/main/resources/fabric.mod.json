@@ -1,29 +1,32 @@
 {
   "schemaVersion": 1,
-  "id": "modid",
+  "id": "betterbehavior",
   "version": "${version}",
 
-  "name": "Example Mod",
+  "name": "Better Behavior",
   "description": "This is an example description! Tell everyone what your mod is about!",
   "authors": [
-    "Me!"
+    "Smoreo"
   ],
   "contact": {
     "homepage": "https://fabricmc.net/",
     "sources": "https://github.com/FabricMC/fabric-example-mod"
   },
 
-  "license": "CC0-1.0",
+  "license": "MIT License",
   "icon": "assets/modid/icon.png",
 
   "environment": "*",
   "entrypoints": {
     "main": [
-      "net.fabricmc.example.ExampleMod"
+      "net.smoreo.betterbehavior.BetterBehavior"
+    ],
+    "client": [
+      "net.smoreo.betterbehavior.BetterBehaviorClient"
     ]
   },
   "mixins": [
-    "modid.mixins.json"
+    "betterbehavior.mixins.json"
   ],
 
   "depends": {
