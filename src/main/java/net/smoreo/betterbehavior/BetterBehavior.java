@@ -1,8 +1,11 @@
 package net.smoreo.betterbehavior;
 
 import net.fabricmc.api.ModInitializer;
+import net.smoreo.betterbehavior.item.ModItems;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
+import java.lang.reflect.Modifier;
 
 //Lets get cooking!
 public class BetterBehavior implements ModInitializer {
@@ -12,5 +15,6 @@ public class BetterBehavior implements ModInitializer {
 	@Override
 	public void onInitialize() {
 
+		ModItems.registerModItems();
 	}
 }
